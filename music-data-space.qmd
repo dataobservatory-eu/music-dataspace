@@ -1,0 +1,248 @@
+---
+title: "Towards a European Music Dataspace"
+subtitle: "The Digital Music Observatory and the Slovak Comprehensive Music Database (SKCMDb)"
+author:
+  - name: "Daniel Antal, CFA"
+    orcid: 0000-0001-7513-6760
+    url: https://reprex.nl/author/daniel-antal/
+    affiliations:
+      - name: Reprex
+        address: "Saturnusstraat 14"
+        city: The Hague
+        state: Zuid-Holland
+        country: The Netherlands
+        postal-code: "2516 AH"
+        url: https://reprex.nl/
+      - name: OpenCollections
+        url: https://opencollections.net/
+papersize: A4
+format:
+  html: 
+    toc: true
+    toc-depth: 3
+  pdf:
+    toc: true
+    colorlinks: true
+    latex: 
+       - lof: true
+  epub: 
+    toc: true
+    toc-depth: 3
+  docx: 
+    reference-doc: docx/OpenMusE_simple_template.docx
+bibliography:
+ - bib/antal.bib
+ - bib/datafeminism.bib
+ - bib/datagovernance.bib
+ - bib/datainteroperability.bib
+ - bib/datalinking.bib
+ - bib/dataspace.bib
+ - bib/datamodels.bib
+ - bib/eXtremeDesign.bib
+ - bib/ISOdata.bib
+ - bib/mme.bib
+ - bib/OpenMusE.bib
+ - bib/trustworthyAI.bib
+ - bib/slovakia.bib
+ - bib/Wikidata.bib
+---
+
+{{< pagebreak >}}
+
+We would like to re-ignite the conversation about the `European Music Observatory` with the creation of a data (sharing) space. Following the decentralised alternative offered in the *Feasibility Study* by CEEMID, we would like to invite stakeholders into the *Observatory Stakeholder Network* to explore various prototype options about the governance, technological, and business solutions of a future observatory.
+
+In 2024, data is abundant about music. Most recorded music is played via digital streaming platforms that record all plays. Concert venues often have IoT sensors, and audiences bring several further wearable sensors in their smartphones, smart watches. The Open Data Directive and other instruments made available unprecedented amount of public sector information about music, and open science initative ensure that the data related to the scientific research of music is reusable for free.
+
+In our vision, a future observatory needs to collect little data, but it has to play a very active role in ensuring that various public and private actors who collect relevant data do share it with each other. We see this future observatory less as a data hoarder, even less as a data centralising agency, and more as a data broker that manages the various interests, privacy concerns, and conflicts among potential users.
+
+The position paper on *Dataspace for Cultural and Creative Industries* defines a data (sharing) space as "an ecosystem of exchange, processing, sharing and provision of data between trusted partners, for a fee or not. It is not about copying or repatriating data centrally, but about ensuring that each data holder has full control over the conditions (e.g., who, when, and under what condition) of access to their data." Data spaces focus on the *possibility* of data integration, and ensure that the data is well-located and understood, even if it does not have a unifying schema or a central collecting database. The *actual data sharing* only takes place on an *as-needed* and *as-permitted* basis[^1].
+
+[^1]: The definition can be found in the *Dataspace for Cultural and Creative Industries* [@dataspace_for_cci_2022, p16]; the *as-needed* dimension of a datapsace is further discussed by [@curry_dataspaces_2020].
+
+We often talk about a European music ecosystem; our aim is the creation of a purposeful, open but formalised *data ecosystem* and turn it into a formal *European Music Dataspace* that follows tha latest European legislation on data governance and trustworthy AI[^2].
+
+[^2]: A Data Ecosystem is a “purposeful collaboration or partnership consuming, producing and providing interoperable data and related resources.” [@bdva_data_sharing_spaces_interoperability_2023, p19].
+
+We would like to invite into this organisation:
+
+-   [x] representative data owners in the field of author's rights management, neighbouring rights management,
+-   [x] concert and festival promoters, ticketing companies, digital distributors,
+-   [x] export offices,
+-   [x] music libraries, music information centers
+
+to exchange data with each other and form a data ecosystem\[\^1\] with the purpose of using, producing, and providing interoperable data for the benefit of the European music ecosystem. This ecosystem should be supported with a data (sharing) space\[\^2\].
+
+{{< pagebreak >}}
+### Glossary 
+
+This glossary is based on the legal definitions of the European _Data Governance Act_  [@data_governance_act_2022], international standards ISO/IEC 2382:2015, ISO 19115-2:2009,  [@iso_2382_2015; @iso_19941_2017] and their excellent contextualisation in the _Data Sharing Spaces and Interoperability_ [@bdva_data_sharing_spaces_interoperability_2023].
+
+`data`: reinterpretable representation of information in a formalized manner suitable for communication, interpretation, or processing [Note 1 to entry: Data can be processed by humans or by automatic means.]
+[SOURCE:ISO/IEC 2382:2015, 2121272] The European legislation uses a more verbose definition:  ‘data’ means any digital representation of acts, facts or information and any compilation of such acts, facts or information, including in the form of sound, visual or audiovisual recording.
+
+`database`: collection of data organized according to a conceptual structure describing the characteristics of these data and the relationships among their corresponding entities, supporting one or more application areas
+[SOURCE:ISO/IEC 2382:2015, 2121413]
+
+`data model` pattern of structuring `data` in a `database` according to the formal descriptions in its information system and according to the requirements of the database management system to be applied [SOURCE:ISO/IEC 2382:2015, 2125519]. 
+
+`relational model`: data model (3.1.10) whose structure is based on a set of relations [SOURCE:ISO/IEC 2382:2015, 17.04.04]
+
+`relational database`: `database` in which the data are organized according to a relational model [SOURCE:ISO/IEC 2382:2015, 17.04.05]
+
+`data set` or `dataset`:  identifiable collection of `data` available for access or download in one or more formats
+[SOURCE:Adapted from ISO 19115-2:2009, 4.7]
+
+`metadata` data (3.1.5) about `data` or data elements, possibly including their data descriptions, and data about data ownership, access paths, access rights and data volatility [SOURCE:ISO/IEC 2382:2015, 17.06.05] A more useful definition for data scientists is Jeffrey Pomerantz's definition: "a statement about a potentially informative object," which emphasises the importance of metadata to put data into the correct context and use to inform the data user [@pomerantz_2015].
+
+`interoperability`:Ability of two or more systems or applications to exchange
+information and to mutually use the information that has been exchanged. (ISO/IEC 19941:2017)
+
+`data portability`: Ability to easily transfer data from one system to another without being required to re-enter data.
+
+	
+`data altruism` means the voluntary sharing of data on the basis of the consent of data subjects to process personal data pertaining to them, or permissions of data holders to allow the use of their non-personal data without seeking or receiving a reward that goes beyond compensation related to the costs that they incur where they make their data available for objectives of general interest as provided for in national law, where applicable, such as healthcare, combating climate change, improving mobility, facilitating the development, production and dissemination of official statistics, improving the provision of public services, public policy making or scientific research purposes in the general interest (as defined by the _Data Governance Act_).
+
+
+### History of initatives and related projects
+In late 2015, the European Commission started a dialogue with representatives from the music sector in Europe with the aim to identify key challenges and possible ways to tackle them, including EU support. "Music Moves Europe" has become the framework for these discussions and, more broadly, for EU initiatives and actions to promote the diversity and competitiveness of Europe's music sector in terms of policy and funding. As part of the 2018 Preparatory Action "Music Moves Europe: Boosting European music diversity and talent," the EU commissioned the creation of the _The feasibility study for the establishment of a European Music Observatory_ (in short: EMO Feasibility Study[^mme-results].)
+
+[^mme-results]: See  _The feasibility study for the establishment of a European Music Observatory_ and _Music Moves Europe - First Dialogue Meeting. Final Report._ [@emo_feasibility_2020; @music_moves_europe_first_dialogue_2021]
+
+According to the grant agreement's ambition, Open Music Europe "aims to contribute to the aim of creating a decentralised European intelligence hub where centralised data collection and analysis have failed in the music industry during the past 20 years. We envision the Open Data Observatory as a decentralised, complementary service to the ESSnet system (Eurostat and the national statistics offices) and the planned, centralised European Music Observatory[^openmuse-definition]."
+
+[^openmuse-definition]: Open Music Europe (OpenMusE) – An Open, Scalable, Data-to-Policy Pipeline for European Music Ecosystems [@openmuse_2023].
+
+The Polifonia project ran from January 2021 until April 2024 to recreate the connections between music, people, places and events from the sixteenth century to the modern day in teh form of an interconnected global database on the web—a knowledge graph. We aim to reuse one of their most important output, the Polifonia Ontology Network, which can potentially increase semantic interoperability in the European music sector[^Polifonia_Ontology_Network].
+
+[^Polifonia_Ontology_Network]: The Polifonia Ontology Network is a collection of ontologies designed to support a wide range of musical applications and facilitate interoperability within the musical domain, covering such diverse aspects like music representation, metadata, instruments, sources, and notations. [@Polifonia_Ontology_Network]
+
+### Prototyping in Slovakia
+
+![Since 2014, Slovakia has been the laboratory of the decentralised data innovations that we want to use in the creation of the European Music Dataspace. We are developing the Slovak Music Dataspace as a prototype on the basis of a wide scope Memorandum of Understanding.](png/idcc24/slovak_music_dataspace.png){fig-align="center"}
+
+
+When the CEEMID project created the Central European Music Industry Report [@antal_ceereport_2020].
+When CEEMID started to work in Slovakia, the Slovak collective management organisations could distribute far less income than the Hungarian organisations, and we found a higher segment of the business demography that was not associated with these organisations. 
+
+
+In 2020 our feasibility study tried to understand why the Spotify recommender systems do not recommend Slovak music for Slovak people in Slovakia[^feasibility-spotify-defense]. Needless to say that behind this puzzle is a lot of bias in public music databases against an intersection of non-American, non-English-speaking, and of course, ethic minority of women artists. At the same time, we reviewed the 600 most played songs in the country to see what kind of data problems there were with their rights management--and found out that more than 50% of professionally managed songs had data problems that resulted in late or missed royalty payments.
+
+[^feasibility-spotify-defense]: We want to emphasize that we could create this feasibility study with data from Spotify because its recommender system description and API is far more transparent and accessible than its competitors. Our remarks must not be seen as a critique of *Spotify* [@antal_promoting_slovak_2020].
+
+After the kick-off meeting of the project, Sinus as the coordinator of the Open Music Europe project, and EUBA, SOZA and REPREX signed a Memorandum of Understanding with the Slovak Ministry of Culture and the Institute for Cultural Policy [@open_music_europe_sk_mou_2023]. This MoU ensures that we apply the Eurostat public policy indicator harmonisation guidelines in at least one member state, i.e., Slovakia.
+
+The starting point of our needs assessment is a critical revision of the Feasibility study for the establishment of a European Music Observatory (short: EMO Feasibility Study) and the Stratégia kultúry a kreatívneho priemyslu Slovenskej republiky 2030 (Strategy of the cultural and creative industries of the Slovak Republic 2030, short: Slovak CCI strategy.)
+
+## Public-Private Partnership to Take Back Data Control
+
+Music is both global and local at the same time. Most music produced in our age can be listened to anywhere in the world on streaming platforms, but in reality, it has a significant number of followers around the artist's location. Most European music creators are confined to a smaller region of Europe, or even their country, where they can profitably tour for live performances or promote their recordings. Many sing in their own language, reducing their audiences to a smaller language group. Yet, wherever they go, they compete with global stars on streaming platforms, local and national radio, in the background music of hotels and restaurants, and for the available places in the festival lineups.
+
+This fragmentation creates uneven opportunities for many of the European music ecosystem. Small language markets and niche genres have so little market opportunity left in large parts of Europe; musicians are self-publishing and self-releasing their works without commercially viable music publishers and record labels. Some EU countries, like Slovakia, never had major labels in their ecosystem, and therefore, local talent had fewer chances to get into global distribution. With the fragmentation of local markets, major labels have been leaving even medium-sized markets like Hungary.
+
+When we talk about data, the picture is even more uneven. While plenty of data is available about the audiences and properties of local or niche repertoires, this data is usually not owned by the artists or their managers but by large global corporations. This is worrying in the decade when AI becomes mainstream. Algorithms sell music on streaming platforms; they help radio editors curate broadcasting playlists; they even assist festival promoters in creating the lineup. How can the European music ecosystem trust these algorithms when they have no access to the data that was used to train them? How can they interrogate these AI systems when checking for the geographical, ethnic, gender, or language biases caused by these algorithmic systems, which require even more data?
+
+The European Union has made several initiatives to take back control over data in the past years. The Open Data Directive and various open science initiatives make almost all relevant taxpayer-funded data available for the music sector. The Data Governance Act and related legal instruments empower the music sector to federate their small datasets into collective big data and fight back. The AI Act takes the first steps toward taking back control over algorithms, even if this step is very timid in the case of the cultural and creative industries[^6].
+
+[^6]: Unfortunately, the new AI Act does not categorise the potential algorithmic harm to the music and culture ecosystem as moderate or high risk, and some of its safeguards will be difficult to apply.
+
+## Goals
+
+Data can be annoying. Many music professionals and creators are overwhelmed by the growing importance of data and the increasing amount of time required to review metadata forms and check more detailed royalty accounts, which results in lower bottom-line revenue. We do not want to create another data institution for the sake of data. We want to ensure that the data federated in the European Music Dataspace works for the music creators and the professionals, researchers and policy-makers who work in European music.
+
+### Triple transition
+
+The European Green Deal aims to promote the European economy's digital and green transitions. All segments of society must share fairly and equitably the opportunities and challenges of this twin transition path. This is why experts and policymakers have started to discuss a triple transition, which integrates the digital, green, and social aspects of the EU's vision for the future—the European Growth Model.
+
+Music is one of the most digitised sectors in the European economy, with almost all essential sales transactions being driven by autonomous AI systems, or human decisions on festival lineups and radio playlists being increasingly assisted by data-driven AI algorithms. Yet, the knowledge and data to train such algorithms and check their potentially harmful biases are in the hands of very few corporations. A more equitable and competitive transition requires a more participatory, collaborative approach to digitisation. This is the aim of the *European Music Dataspace*. Yet we must not forget the digitisation is not an end-goal, it should support a more competitive, more sustainable and just music ecosystem.
+
+We see the green transition as an opportunity for music. Creative industries, with no exception of music, have been suffering from structural problems connected to the fragmentation of small companies. This fragmentation has led to a highly informal music economy with limited access to private funding. Closing the funding gap accumulated in the past two decades[^cci-funding-gap] necessitates that music should aim to receive a higher-than-proportional share from green investments, green loans, and the benefits of lower-cost green insurance. Access to the benefits of the European Green Deal poses a big data challenge because auditable sustainable performance requires the integration of company financial and economic indicators with environmental and social indicators.
+
+[^cci-funding-gap]: _Analysis of market trends and gaps in funding needs for the music sector : final report_ [@music_market_trends_funding_gaps_2020]
+
+One of the economic areas where the triple transition is the most overdue is the creative and cultural industries, particularly music, which is one of the foremost digitised sectors of our economic system. The social transition aims to ensure that everyone in the European music ecosystem, i.e., composers, producers, performers, managers, support staff, audiences and amateur practitioners, are included in achieving a more sustainable and competitive economy.
+
+::: callout-note
+The "triple transition" is highly relevant to our work because these horizontal policies guide public investment, have new rules on private investment spending, and foresee changes in economic and tax policies. It immediately connects with the 2nd strategic priority of the Slovak CCI Strategy, 2 Efficiently funded culture to systematically reduce the infrastructure and modernisation gap, increase the efficiency of the finance management and financing of culture and creative industries, and complement public funding sources with private sources. Furthermore, we also agree with the strategy's prioritisation to put 3 Dignified culture, i.e., the proper remuneration for the workforce of the Slovak cultural sectors, on the top of the policy intervention agenda, because in CCSIs, the bigger part of the gross value added or gross product is the value created by the workforce (labour) and not fixed capital assets. The following KPIs of this strategic objective are very relevant to our work.
+
+The indicators from the text below are added to the slides, too.
+
+The Slovak strategic SDGs have a strong cultural component, too [@slovak_sdg_strategy_2020, p. 58.], which partly overlap with the Slovak CCI Strategy.
+:::
+
+### Musician-centered
+
+By 2024, many European music creators, professionals and institutions have learned that AI algorithms can work against them. If we believe that AI is here to stay, we need to empower the music stakeholders to use AI in a way that works for them.
+
+The EU AI Act defines three main types of AI. Some require more technical skills to deploy, and others need less. In an algorithmic setting, they all require a goal and will be trained on data. Testing whether they work well requires further data.
+
+Most of these creators and professionals will not become AI experts. Yet somehow, they must remain in the loop, and be able to control algorithms or deploy new ones centred around their needs to promote their niche repertoires, find inconsistencies in royalty accounts, or discover the venues and playlists they can profitably target.
+
+We want to find potential data sources and bring them into our data ecosystem and data-sharing space, which will enable European stakeholders to regain control in the AI space or even take initiatives to improve the diversity and inclusiveness of digital spaces increasingly dominated by competing algorithms.
+
+{{< pagebreak >}}
+
+## Values
+
+### Trustworthiness
+
+Putting people working with music or enjoying music first is just a starting point for making data and algorithms trustworthy. The Ethics Guidelines for Trustworthy AI[^7], which was a very important input into the European AI Act, listed six further requirements after human agency and oversight to make an AI system trustworthy.
+
+[^7]: *Ethics Guidelines for Trustworthy AI* [@ethics_guidelines_trustworthy_ai_2019]
+
+-   [x] Technical robustness and safety; which covers how AI systems work with data and how they can drive automated processes.
+-   [x] Privacy and Data governance places checks and balances on how data can be used to train AI.
+-   [x] Transparency is a key requirement both for the algorithm and the data, information or knowledge base that trained the algorithm.
+-   [x] Diversity, non-discrimination and fairness can be achieved as an outcome of autonomous AI action of the data inputs are diverse, inclusive, and have a fair and non-discriminatory coverage.
+-   [x] Societal and environmental well-being can be taken forward by AI if the algorithm is trained on knowledge that covers these important aspects.
+-   [x] Accountability requires checks and balances that certainly have a documentary and data evidence aspect.
+
+### Transparent
+
+### Decentralised
+
+Our granted work follows the Feasibility study for the establishment of a European Music Observatory : final report with caveats. [@emo_feasibility_2020]
+
+### Informed by Data Feminism
+
+> Data feminism begins by examining how power operates in the world today. This consists of asking who questions about data science: Who does the work (and who is pushed out)? Who benefits (and who is neglected or harmed)? Whose priorities get turned into products (and whose are overlooked)? These questions are relevant at the level of individuals and organizations, and are absolutely essential at the level of society. The current answer to most of these questions is “people from dominant groups,” which has resulted in a privilege hazard so acute that it explains the near-daily revelations about another sexist or racist data product or algorithm. The matrix of domination helps us to understand how the privilege hazard—the result of unequal distributions of power—plays out in different domains. Ultimately, the goal of examining power is not only to understand it, but also to be able to challenge and change it. [@data_feminism_power_chapter_2020]
+
+If we ask music professionals, creators, researchers about our current digitised music space, most likely it will be described with the words "injustice", "inequality", or "lack of transparency". There is an overwhelming consensus on the need to make digital music more just, because the current system benefits a few corporations, a few countries, language users, genres and countries of origin. In many instances, women, gender, ethnic minorities experience that the muisc system is stacked against their interests.  
+
+In the creation of our European Music Data Space, we rely on the practices of an intersectional feminist approach to critical data science. The intersectional feminist approach does not only work for women: it gives a theoretical and practical framework to combat the unjust inequalities based on the various sections and intersections of identity, including gender, ethnicity, race, language or genre of expression can create unjust inequalities. The data feminist critique exposes the fact that that more data is not always better and that the data is usually not a neutral input in music systems.
+
+The problem with data-driven music systems is that the most influential datasets are created by a few corporations; they represent better certain type of mainstream-genre artists in the richest countries and represented by major publishers and record labels, and represent less good independent artists, women, and various sections of non-mainstream music. In this respect we may suspect that most European creators fall into the category whose representation is imperfect at best, or missing.
+
+
+
+
+
+
+Counting and measuring do not always have to be tools of oppression. We can also use them to hold power accountable, to reclaim overlooked histories, and to build collectivity and solidarity. When we count within our own communities, with consideration and care, we can work to rebalance unequal distributions of power.
+
+{{< pagebreak >}}
+
+## Data Sharing Space
+
+According to the recommendations of the expert group behind *Design Principles for Data Spaces*, the following requirements need to to be met by data spaces [@design_principles_data_spaces_2021, p26]:
+
+-   [x] Data spaces should provide a framework for effective and efficient data exchange, supporting the decoupling of data producers and data consumers. This means they should allow for adoption of common APIs and security schemas, as well as adoption of data models that can be represented in data formats compatible with adopted APIs, for the purpose of sharing and exchanging data.
+
+-   [x] Data spaces should provide a structure for defining and enforcing agreements on the use of data (including potential monetization of both data provision and data use). This means they should allow for incorporation of capabilities for specifying and publishing data offerings comprising terms and conditions (including pricing) that can be enforced during data exchange transactions.
+
+-   [x] Data spaces should provide a structure for trustworthiness, in which data consumers and data providers can share their business interests on the basis of common ethical values. This means they should provide security capabilities to protect data ownership aspects as well as business operations, including capabilities for privacy protection that can be engineered and deployed.
+
+-   [x] Data spaces should provide a structure on the basis of which specific policies and regulations can be supported.
+
+### European Interoperability Framework
+
+![European Interoperability Framework](png/interoperability/EIF_en_2x1.png)
+
+### Legal Interoperability
+
+### Organisational Interoperability
+
+### Semantic Interoperability
+
+An intersectional feminist approach to counting insists that we examine and, if necessary, rethink the assumptions and beliefs behind our classification infrastructure, as well as consistently probe who is doing the counting and whose interests are served [@data_feminism_what_gets_counted_2020].
+
+### Technical Interoperability
